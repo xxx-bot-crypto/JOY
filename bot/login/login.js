@@ -1,5 +1,5 @@
 // set bash title
-process.stdout.write("\x1b]2; SHADOW BOT - Made by Cid Kageno\x1b\x5c");
+process.stdout.write("\x1b]2;Goat Bot V2 - Made by NTKhang\x1b\x5c");
 const defaultRequire = require;
 
 function decode(text) {
@@ -63,19 +63,25 @@ function centerText(text, length) {
 }
 
 // logo
-const titles = [`\x1b[1m\x1b[36m
-     ██████╗  ██╗  ██████╗ 
-     ██╔═══╝  ██║  ██╔══ ██╗
-     ██║       ██║  ██║    ██║
-     ██║       ██║  ██║   ██║
-     ╚██████╗ ██║  ██████╔╝
-      ╚═════╝ ╚═╝  ╚═════╝ 
-      
-    █▄▀ ▄▀█ █▀▀ █▀▀ █▄░█ █▀█
-    █░█ █▀█ █▄█ ██▄ █░▀█ █▄█
-    
-      === I AM ATOMIC ===
-\x1b[0m`);
+const titles = [
+        [
+                "██████╗  ██████╗  █████╗ ████████╗    ██╗   ██╗██████╗",
+                "██╔════╝ ██╔═══██╗██╔══██╗╚══██╔══╝    ██║   ██║╚════██╗",
+                "██║  ███╗██║   ██║███████║   ██║       ██║   ██║ █████╔╝",
+                "██║   ██║██║   ██║██╔══██║   ██║       ╚██╗ ██╔╝██╔═══╝",
+                "╚██████╔╝╚██████╔╝██║  ██║   ██║        ╚████╔╝ ███████╗",
+                "╚═════╝  ╚═════╝ ╚═╝  ╚═╝   ╚═╝         ╚═══╝  ╚══════╝"
+        ],
+        [
+                "█▀▀ █▀█ ▄▀█ ▀█▀  █▄▄ █▀█ ▀█▀  █░█ ▀█",
+                "█▄█ █▄█ █▀█ ░█░  █▄█ █▄█ ░█░  ▀▄▀ █▄"
+        ],
+        [
+                "G O A T B O T  V 2 @" + currentVersion
+        ],
+        [
+                "GOATBOT V2"
+        ]
 ];
 const maxWidth = process.stdout.columns;
 const title = maxWidth > 58 ?
@@ -107,7 +113,7 @@ else {
         subTitleArray.push(subTitle);
 }
 const author = ("Created by NTKhang with ♡");
-const modified = ("Modified by Cid Kageno");
+const modified = ("Modified by NeoKEX");
 const srcUrl = ("Source code: https://github.com/ntkhang03/Goat-Bot-V2");
 const fakeRelease = ("ALL VERSIONS NOT RELEASED HERE ARE FAKE");
 for (const t of subTitleArray) {
